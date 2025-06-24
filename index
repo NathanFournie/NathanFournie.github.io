@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Documents de Nathan Fournié</title>
+<!-- feuille de style -->   
+<meta charset="utf-8">
+<title>Parabola</title>
+<link rel="shortcut icon" href="images/HyperbolicParaboloid.png" type="image/x-icon">
+<link href="style_index.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Bienvenue</h1>
-    <p>Voici mes documents en PDF :</p>
-    <ul>
-        <li><a href="documents/mon_cours.pdf" target="_blank">Mon cours de géométrie</a></li>
-    </ul>
+<div class="header">
+
+  <img src="images/HyperbolicParaboloid.png" alt="une parabole en 3d" width="7%" class="logo1">
+  <img src="images/HyperbolicParaboloid.png" alt="une parabole en 3d" width="7%" class="logo2">
+
+  <h1>Parabola</h1>
+  <h2>Quel que soit le temps passé à faire des mathématiques, ce n’est jamais du temps perdu.
+      <br>- Cedric Villani</h2>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Acceuil</a>
+  <a href="notes_de_cours.html">Notes de cours</a>
+  <a href="exercices.html">Exercices</a>
+  <a href="bibliotheque.html">Bibliothèque</a>
+  <a href="miscellanous.html">Miscallénanous</a>
+</div>
+<hr>
+
+<div class="page">
+
+    <h2>Bienvenue !</h2>
+
+    <p>Je suis un étudiant en licence de mathématiques. Pour m’amuser et réviser, je tape des documents LaTeX sur divers sujets. J’ai décidé de les rendre disponibles ici. Vous trouverez des notes de cours, des exercices avec leurs corrections, des biographies de grands mathématiciens et mathématiciennes, des curiosités mathématiques amusantes, ainsi que des traductions et corrections d’exercices du célèbre concours Putnam. </p>
+    <p>Vous êtes libre de placer un lien vers mes documents sur votre site, mais je n’autorise pas l’hébergement direct ni l’utilisation commerciale de mon travail.</p>
+</div>
+
+<div class="footer">
+
+  <h2>Mise en garde :</h2>
+
+  <p>Je ne suis qu’un étudiant, et à ce titre je ne peux en aucun cas garantir l’absence de fautes et coquilles dans l’ensembles des documents qui se trouverons sur ce site. Autant sur la forme que sur le fond. Je ne peux que vous préconiser la pratique zététicienne pendant votre lecture.</p>
+
+  <p>Dans le cas où vous trouvez une erreur, vous êtes invité à me la communiquer à l’adresse suivante : machinmachin@gmail.com
+  </p>
+</div>
 </body>
+
 </html>
+
+
