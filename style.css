@@ -24,34 +24,24 @@ body {
 }
 
 h1 {
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  position: relative;
   color: var(--vert-sapin);
+  transition: color 0.4s ease, letter-spacing 0.4s ease;
+  letter-spacing: 0px;
   cursor: pointer;
-  display: inline-block; /* pour que largeur corresponde au texte */
 }
 
-h1::after {
-  content: "";
-  position: absolute;
-  width: 100%;       /* largeur du texte */
-  height: 3px;
-  bottom: -6px;
-  left: 0;
-  background: linear-gradient(90deg, var(--vert-sapin), #004080);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.6s ease;  /* transition plus lente */
-  border-radius: 2px;
-}
-
-h1:hover::after {
-  transform: scaleX(1);
+h1:hover {
+  color: #0055cc;
+  letter-spacing: 2px;
 }
 
 h2, h3 {
   color: var(--vert-sapin);
-  text-align: center;     /* centre le texte */
   text-decoration: underline;  /* ajoute un soulignement */
 }
 
