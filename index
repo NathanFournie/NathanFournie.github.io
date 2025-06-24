@@ -1,53 +1,85 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-<!-- feuille de style -->   
-<meta charset="utf-8">
-<title>Parabola</title>
-<link rel="shortcut icon" href="images/HyperbolicParaboloid.png" type="image/x-icon">
-<link href="style_index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil – Nathan Fournié</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #fdfdfd;
+            color: #222;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        header {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 2em;
+        }
+        h1 {
+            margin: 0.2em 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 1em;
+        }
+        nav a {
+            text-decoration: none;
+            color: #005f99;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 3em;
+            border-top: 1px solid #ccc;
+            padding-top: 1em;
+        }
+    </style>
 </head>
-
 <body>
-<div class="header">
 
-  <img src="images/HyperbolicParaboloid.png" alt="une parabole en 3d" width="7%" class="logo1">
-  <img src="images/HyperbolicParaboloid.png" alt="une parabole en 3d" width="7%" class="logo2">
+<header>
+    <h1>Nathan Fournié</h1>
+    <p>Bienvenue sur mon site de partage de documents</p>
+</header>
 
-  <h1>Parabola</h1>
-  <h2>Quel que soit le temps passé à faire des mathématiques, ce n’est jamais du temps perdu.
-      <br>- Cedric Villani</h2>
-</div>
+<nav>
+    <ul>
+        <li><a href="#docs">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<div class="topnav">
-  <a href="index.html">Acceuil</a>
-  <a href="notes_de_cours.html">Notes de cours</a>
-  <a href="exercices.html">Exercices</a>
-  <a href="bibliotheque.html">Bibliothèque</a>
-  <a href="miscellanous.html">Miscallénanous</a>
-</div>
-<hr>
+<section id="docs">
+    <h2>Documents à télécharger</h2>
+    <ul>
+        <li><a href="documents/geometrie_affine.pdf" target="_blank">Cours de géométrie affine (PDF)</a></li>
+        <li><a href="documents/theorie_galois.pdf" target="_blank">Introduction à la théorie de Galois (PDF)</a></li>
+        <li><a href="documents/mes_notes.pdf" target="_blank">Notes personnelles (PDF)</a></li>
+    </ul>
+</section>
 
-<div class="page">
+<section id="contact">
+    <h2>Me contacter</h2>
+    <p>Pour toute question, vous pouvez me joindre à l'adresse : <a href="mailto:nathan.fournie@email.com">nathan.fournie@email.com</a></p>
+</section>
 
-    <h2>Bienvenue !</h2>
+<footer>
+    <p>&copy; 2025 Nathan Fournié – Tous droits réservés</p>
+</footer>
 
-    <p>Je suis un étudiant en licence de mathématiques. Pour m’amuser et réviser, je tape des documents LaTeX sur divers sujets. J’ai décidé de les rendre disponibles ici. Vous trouverez des notes de cours, des exercices avec leurs corrections, des biographies de grands mathématiciens et mathématiciennes, des curiosités mathématiques amusantes, ainsi que des traductions et corrections d’exercices du célèbre concours Putnam. </p>
-    <p>Vous êtes libre de placer un lien vers mes documents sur votre site, mais je n’autorise pas l’hébergement direct ni l’utilisation commerciale de mon travail.</p>
-</div>
-
-<div class="footer">
-
-  <h2>Mise en garde :</h2>
-
-  <p>Je ne suis qu’un étudiant, et à ce titre je ne peux en aucun cas garantir l’absence de fautes et coquilles dans l’ensembles des documents qui se trouverons sur ce site. Autant sur la forme que sur le fond. Je ne peux que vous préconiser la pratique zététicienne pendant votre lecture.</p>
-
-  <p>Dans le cas où vous trouvez une erreur, vous êtes invité à me la communiquer à l’adresse suivante : machinmachin@gmail.com
-  </p>
-</div>
 </body>
-
 </html>
-
 
