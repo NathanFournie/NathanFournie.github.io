@@ -23,29 +23,36 @@ body {
   padding-bottom: 2em;
 }
 
-h1, h2, h3 {
+h1 {
   position: relative;
-  text-align:center;
+  text-align: center;
   color: var(--vert-sapin);
   cursor: pointer;
+  display: inline-block; /* pour que largeur corresponde au texte */
 }
 
-h1::after, h2::after, h3::after {
+h1::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 100%;       /* largeur du texte */
   height: 3px;
   bottom: -6px;
   left: 0;
   background: linear-gradient(90deg, var(--vert-sapin), #004080);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease;  /* transition plus lente */
   border-radius: 2px;
 }
 
-h1:hover::after, h2:hover::after, h3:hover::after {
+h1:hover::after {
   transform: scaleX(1);
+}
+
+h2, h3 {
+  color: var(--vert-sapin);
+  text-align: center;     /* centre le texte */
+  text-decoration: underline;  /* ajoute un soulignement */
 }
 
 nav {
