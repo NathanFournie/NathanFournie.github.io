@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Documents de Nathan Fournié</title>
+</head>
+<body>
+    <h1>Bienvenue</h1>
+    <p>Voici mes documents en PDF :</p>
+    <ul>
+        <li><a href="documents/mon_cours.pdf" target="_blank">Mon cours de géométrie</a></li>
+    </ul>
+</body>
+</html>
