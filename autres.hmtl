@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Autres – Nathan Fournié</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 800px; margin: auto; padding: 2em; }
+    nav a { margin: 0 1em; text-decoration: none; color: #005f99; }
+  </style>
+</head>
+<body>
+  <h1>Autres contenus</h1>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="documents.html">Documents</a>
+    <a href="autres.html">Autres</a>
+  </nav>
+
+  <ul>
+    <li><a href="https://github.com/NathanFournie" target="_blank">Mon profil GitHub</a></li>
+    <li><a href="documents/cv.pdf" target="_blank">Mon CV (PDF)</a></li>
+    <li><a href="#">À venir…</a></li>
+  </ul>
+</body>
+</html>
