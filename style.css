@@ -24,14 +24,28 @@ body {
 }
 
 h1, h2, h3 {
+  position: relative;
+  text-align:center;
   color: var(--vert-sapin);
-  text-shadow: 1px 1px 0 #a0bfa0, -1px -1px 0 #a0bfa0;
-  transition: text-shadow 0.4s ease;
   cursor: pointer;
 }
 
-h1:hover, h2:hover, h3:hover {
-  text-shadow: 3px 3px 8px rgba(0, 64, 128, 0.6);
+h1::after, h2::after, h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(90deg, var(--vert-sapin), #004080);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+h1:hover::after, h2:hover::after, h3:hover::after {
+  transform: scaleX(1);
 }
 
 nav {
