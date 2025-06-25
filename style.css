@@ -136,7 +136,7 @@ a:hover {
   }
 
 .document a::after {
-  content: " 📥"; /* espace puis icône */
+  content: " 📃"; /* espace puis icône */
   font-size: 0.9em;
   vertical-align: middle;
   color: var(--lien-survol); /* couleur discrète */
