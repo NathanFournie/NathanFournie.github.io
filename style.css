@@ -116,6 +116,24 @@ a:hover {
   font-style: italic;
   color: #555;
 }
+.gallery {
+    display: table;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+  }
+  .cell img {
+    max-width: 150px; /* ajuste la taille des images */
+    height: auto;
+    border: 1px solid #ccc;
+  }
 
 footer {
   text-align: center;
