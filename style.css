@@ -142,7 +142,8 @@ a:hover {
   color: var(--lien-survol); /* couleur discrète */
 }
 
-nav a.active {
+
+a.active {
   font-weight: bold;
   text-decoration: underline;
 }
