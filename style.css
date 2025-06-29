@@ -141,6 +141,12 @@ a:hover {
   vertical-align: middle;
   color: var(--lien-survol); /* couleur discrète */
 }
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   font-size: 0.9em;
