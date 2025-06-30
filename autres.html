@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -34,6 +34,9 @@
   <!-- Apparence -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
   <h1>Autres contenus</h1>
@@ -63,6 +66,40 @@ Il est aussi possible de faire apparaître le cercle ou le plan osculateur (quan
     <div class="cell"><img src="images/courbe6.png" alt="juste une courbe 6" /></div>
   </div>
 </div>
+
+ <div class="document">
+    <a href="codes/traceur_courbes.py" target="_blank">Séries entières animées</a>
+    <p class="commentaire">Un code python qui permet de visualiser la convergence d'une série entière dans le plan complexe. Il demande à l'utilisateur en entrée les coefficients $a_n$ de la série $S$
+      puis donne un gif de 50 images représentant la $\vert S_N\vert$. L'execution est un peu longe, et le fichier gif se trouve dans le répertoire de travail. C'est pratique pour se faire une idée de la vitesse
+      de convergence d'une série. A titre d'exemple, on trouvera ci-dessous l'animation pour une série qui converge sur le disque unité et explose en trois points du bord. Pour construire une telle série on peut s'inspirer de
+      $\sum^{infty}_{n=0}z^n=\frac{1}{1-z}$ qui diverge en $z=1$. On construit alors : 
+    \[
+    S(z) = \sum_{k=1}^3 \frac{c_k}{1 - z e^{-i\theta_k}}
+    \]
+    Chaque terme est une série géométrique de rayon de convergence \( |z| < 1 \), donc on peut écrire :
+    \[
+    \frac{1}{1 - z e^{-i\theta_k}} = \sum_{n=0}^\infty \left(z e^{-i\theta_k}\right)^n
+    \]
+    D'où :
+
+    \[
+    S(z) = \sum_{k=1}^3 c_k \sum_{n=0}^\infty \left(z e^{-i\theta_k}\right)^n
+    = \sum_{k=1}^3 \sum_{n=0}^\infty c_k e^{-i n \theta_k} z^n
+    \]
+    Par permutation des sommes (justifiée pour \( |z| < 1 \)), on obtient :
+
+    \[
+    S(z) = \sum_{n=0}^\infty \left( \sum_{k=1}^3 c_k e^{-i n \theta_k} \right) z^n
+    \]
+
+    On définit donc les coefficients :
+
+    \[
+    a_n = \sum_{k=1}^3 c_k e^{-i n \theta_k}
+    \]
+    La série ainsi construite admet pour seul point de divergence les $e^{i\theta_k}$ En voici la représentation :
+
+
 
 <p>Voici une petite liste de sites qui valent le détour.</p>
 
