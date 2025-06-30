@@ -152,6 +152,46 @@ a:hover {
   color: #555;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 1em;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .row {
+    flex-direction: column;
+  }
+  .gallery .cell {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+  .gallery .cell img {
+    width: 100%;
+    height: auto;
+  }
+  .document, .commentaire, .com_lien {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    padding-left: 1em;
+  }
+}
 
 
 footer {
