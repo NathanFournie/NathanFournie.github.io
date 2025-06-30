@@ -1,5 +1,6 @@
 /* style.css */
 
+/* --- Couleurs principales (variables CSS) --- */
 :root {
   --beige: #f6f2e8;
   --vert-sapin: #2f4f4f;
@@ -9,20 +10,23 @@
   --lien-survol: #55796e;
 }
 
+/* --- Style global du corps de page --- */
 body {
   margin: 0;
-  padding: 0 3em; /* réduit la marge intérieure horizontale */
+  padding: 0 3em; /* marge intérieure horizontale large sur desktop */
   font-family: 'Georgia', serif;
   background-color: var(--beige);
   color: var(--texte);
   line-height: 1.6;
-  max-width: 1100px; /* contenu plus large */
+  max-width: 1100px; /* largeur limitée pour confort de lecture */
   margin-left: auto;
   margin-right: auto;
   padding-top: 2em;
   padding-bottom: 2em;
+  font-size: 18px;
 }
 
+/* --- Titres --- */
 h1 {
   font-family: 'Cinzel', serif;
   display: block;
@@ -35,16 +39,16 @@ h1 {
   letter-spacing: 0px;
   cursor: pointer;
 }
-
 h1:hover {
   letter-spacing: 7px;
 }
 
 h2, h3 {
   color: var(--vert-sapin);
-  text-decoration: underline;  /* ajoute un soulignement */
+  text-decoration: underline;
 }
 
+/* --- Navigation --- */
 nav {
   background-color: var(--vert-sapin);
   padding: 1em;
@@ -65,6 +69,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* --- Listes --- */
 ul {
   padding-left: 1.5em;
 }
@@ -73,6 +78,7 @@ ul li {
   margin-bottom: 0.6em;
 }
 
+/* --- Liens --- */
 a {
   color: var(--lien);
   text-decoration: none;
@@ -88,6 +94,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* --- Sections thématiques --- */
 .theme {
   margin-bottom: 3em;
 }
@@ -99,6 +106,7 @@ a:hover {
   margin-bottom: 1em;
 }
 
+/* --- Documents --- */
 .document {
   margin-bottom: 1.5em;
 }
@@ -115,90 +123,47 @@ a:hover {
   color: var(--lien-survol);
 }
 
-.commentaire {
+.document a::after {
+  content: " 📃"; /* icône discrète */
+  font-size: 0.9em;
+  vertical-align: middle;
+  color: var(--lien-survol);
+}
+
+/* --- Commentaires --- */
+.commentaire, .com_lien {
   margin-top: 0.3em;
   margin-left: 1em;
   font-style: italic;
   color: #555;
 }
+
+/* --- Galerie d’images en flexbox --- */
 .gallery {
-    display: table;
-    margin: 20px auto;
-    border-collapse: collapse;
-  }
-  .row {
-    display: table-row;
-  }
-  .cell {
-    display: table-cell;
-    padding: 10px;
-    text-align: center;
-  }
-  .cell img {
-    max-width: 150px; /* ajuste la taille des images */
-    height: auto;
-    border: 1px solid #ccc;
-  }
-
-.document a::after {
-  content: " 📃"; /* espace puis icône */
-  font-size: 0.9em;
-  vertical-align: middle;
-  color: var(--lien-survol); /* couleur discrète */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+  max-width: 100%;
 }
 
-.com_lien {
-  font-style: italic;
-  color: #555;
+.cell {
+  flex: 1 0 150px; /* minimum 150px, flexible */
+  max-width: 150px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-
-  body {
-    padding: 0 1em; /* moins d’espace horizontal sur petit écran */
-    max-width: 100%; /* utiliser toute la largeur */
-  }
-   h1 {
-    font-size: 1.8em; /* réduire un peu la taille */
-    letter-spacing: 2px; /* moins d’écartement au hover */
-  }
-  h2, h3 {
-    font-size: 1.2em;
-  }
-  body {
-    font-size: 16px; /* ou un peu moins, selon ton choix */
-  }
-
-  nav {
-    padding: 0.5em;
-  }
-  nav a {
-    margin: 0 0.5em;
-    display: inline-block;
-    font-size: 0.9em;
-  }
-
-  
-  .gallery {
-    display: block; /* pour enlever flex */
-  }
-  .gallery .row {
-    display: block; /* pour que chaque ligne prenne toute la largeur */
-    margin-bottom: 1em;
-  }
-  .gallery .cell {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-  .gallery .cell img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.cell img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
+/* --- Pied de page --- */
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -206,4 +171,50 @@ footer {
   color: #555;
   border-top: 1px solid #ccc;
   padding-top: 1em;
+}
+
+/* --- Adaptations pour petits écrans (smartphones, tablettes) --- */
+@media screen and (max-width: 768px) {
+  
+  body {
+    padding: 0 1em; /* moins d’espace horizontal */
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+  }
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  nav {
+    padding: 0.5em;
+  }
+  nav a {
+    margin: 0 0.5em;
+    font-size: 0.9em;
+  }
+
+  /* Galerie : images en pleine largeur et empilées verticalement */
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .cell {
+    flex: none;
+    width: 100%;
+    max-width: none;
+  }
+  .cell img {
+    width: 100%;
+  }
+
+  /* Réduction des marges sur thèmes, documents, footer */
+  .theme, .document, footer {
+    margin-bottom: 1.5em;
+  }
 }
