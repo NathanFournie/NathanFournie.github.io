@@ -153,6 +153,32 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+  body {
+    padding: 0 1em; /* moins d’espace horizontal sur petit écran */
+    max-width: 100%; /* utiliser toute la largeur */
+  }
+   h1 {
+    font-size: 1.8em; /* réduire un peu la taille */
+    letter-spacing: 2px; /* moins d’écartement au hover */
+  }
+  h2, h3 {
+    font-size: 1.2em;
+  }
+  body {
+    font-size: 16px; /* ou un peu moins, selon ton choix */
+  }
+
+  nav {
+    padding: 0.5em;
+  }
+  nav a {
+    margin: 0 0.5em;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+
+  
   .gallery {
     display: block; /* pour enlever flex */
   }
