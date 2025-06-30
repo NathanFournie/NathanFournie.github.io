@@ -183,11 +183,11 @@ footer {
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     letter-spacing: 2px;
   }
   h2, h3 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   nav {
@@ -195,7 +195,7 @@ footer {
   }
   nav a {
     margin: 0 0.5em;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   /* Galerie : images en pleine largeur et empilées verticalement */
@@ -206,11 +206,11 @@ footer {
   }
   .cell {
     flex: none;
-    width: 100%;
+    width: 60%;
     max-width: none;
   }
   .cell img {
-    width: 100%;
+    width: 60%;
   }
 
   /* Réduction des marges sur thèmes, documents, footer */
