@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://nathanfournie.github.io/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://nathanfournie.github.io/documents.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nathanfournie.github.io/documents/cours/cours%20d'ana8%20S6.pdf</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/documents/exo/séries%20entière%20td.pdf</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/documents/exo/prop%20des%20fcts%20holo.pdf</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/documents/exo/Exercice_L2_groupe_anneaux.pdf</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/documents/autres/théorème%20de%20Picard%20(grand).pdf</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/documents/autres/probleme_de_bale.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://nathanfournie.github.io/autres.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://nathanfournie.github.io/codes/traceur_courbes.py</loc>
+  </url>
+
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbes.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbe2.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbe3.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbe4.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbe5.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/courbe6.png</loc>
+  </url>
+  <url>
+    <loc>https://nathanfournie.github.io/images/animation_serie_ent.gif</loc>
+  </url>
+
+</urlset>
