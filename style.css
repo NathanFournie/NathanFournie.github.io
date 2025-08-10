@@ -176,14 +176,12 @@ footer {
 .starwars-effect {
   width: 90%;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.4;
   color: #1f1f1f; 
   font-family: 'Georgia', serif;
   text-align: justify;        /* texte justifié */
   margin: 0.1em auto; 
-  transform-origin: bottom center;
-  transform: perspective(800px) rotateX(25deg) scale(0.7);
 }
 
 .starwars-effect-titre {
