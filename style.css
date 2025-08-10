@@ -181,7 +181,7 @@ footer {
   color: #1f1f1f; /* texte noir foncé */
   font-family: 'Georgia', serif;
   text-align: justify;        /* texte justifié */
-  margin: 0.5em auto 2em auto; /* marge haute réduite, centré horizontalement */
+  margin: 0.5em auto; /* marge haute réduite, centré horizontalement */
   transform-origin: bottom center;
   transform: perspective(600px) rotateX(25deg) scale(0.9);
 }
