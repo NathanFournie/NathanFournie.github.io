@@ -199,6 +199,13 @@ footer {
   transform: perspective(800px) rotateX(25deg) scale(0.9);
 }
 
+.starwars-effect {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.starwars-effect:first-child {
+  margin-top: 2em; /* garde un peu d’espace au-dessus du premier */
+}
 
 
 
