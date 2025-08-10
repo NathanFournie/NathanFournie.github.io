@@ -174,19 +174,31 @@ footer {
 }
 
 .starwars-effect {
-  max-width: 600px;
+  width: 90%;
   font-weight: bold;
   font-size: 1.8em;
   line-height: 1.4;
-  color: #1f1f1f; /* texte noir foncé */
+  color: #1f1f1f; 
   font-family: 'Georgia', serif;
   text-align: justify;        /* texte justifié */
-  margin: 0.1em auto; /* marge haute réduite, centré horizontalement */
+  margin: 0.1em auto; 
   transform-origin: bottom center;
-  transform: perspective(300px) rotateX(25deg) scale(0.9);
+  transform: perspective(800px) rotateX(25deg) scale(0.9);
 }
 
-  
+.starwars-effect-titre {
+  width: 90%;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.4;
+  color: #1f1f1f; 
+  font-family: 'Georgia', serif;
+  text-align: center;       /* texte centré */
+  margin: 0.1em auto; 
+  transform-origin: bottom center;
+  transform: perspective(800px) rotateX(25deg) scale(0.9);
+}
+
 
 
 
