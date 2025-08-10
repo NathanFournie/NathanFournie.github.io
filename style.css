@@ -173,6 +173,20 @@ footer {
   padding-top: 1em;
 }
 
+  .starwars-effect {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.4;
+  color: #1f1f1f; /* couleur texte noir foncé, pour rester cohérent */
+  font-family: 'Georgia', serif; /* ou Cinzel si tu veux plus classe */
+  text-align: center;
+  margin: 2em auto;
+  transform-origin: bottom center;
+  transform: perspective(600px) rotateX(25deg) scale(0.9);
+  /* Pas d’animation pour effet fixe */
+} 
+
 /* --- Adaptations pour petits écrans (smartphones, tablettes) --- */
 @media screen and (max-width: 768px) {
   
@@ -214,19 +228,7 @@ footer {
   }
 
 
-  .starwars-effect {
-  max-width: 600px;
-  font-weight: bold;
-  font-size: 1.8em;
-  line-height: 1.4;
-  color: #1f1f1f; /* couleur texte noir foncé, pour rester cohérent */
-  font-family: 'Georgia', serif; /* ou Cinzel si tu veux plus classe */
-  text-align: center;
-  margin: 2em auto;
-  transform-origin: bottom center;
-  transform: perspective(600px) rotateX(25deg) scale(0.9);
-  /* Pas d’animation pour effet fixe */
-} 
+
 
 
   
