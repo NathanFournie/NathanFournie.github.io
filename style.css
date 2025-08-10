@@ -173,26 +173,22 @@ footer {
   padding-top: 1em;
 }
 
+.starwars-effect {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.4;
+  color: #1f1f1f; /* texte noir foncé */
+  font-family: 'Georgia', serif;
+  text-align: justify;        /* texte justifié */
+  margin: 0.5em auto 2em auto; /* marge haute réduite, centré horizontalement */
+  transform-origin: bottom center;
+  transform: perspective(600px) rotateX(25deg) scale(0.9);
+}
   
 
 
-    .starwars-effect {
-  /* Flexbox to center the entire element on the screen */
-  display: flex;
-  justify-content: center;
-  /* This is a magic number based on the context in which this snippet is used and effects the perspective */
-  height: 800px;
-  /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
-  perspective: 400px;
-  /* The rest is totally up to personal styling preferences */
-  color: #feda4a;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 500%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  text-align: justify;
-}
+
 /* --- Adaptations pour petits écrans (smartphones, tablettes) --- */
 @media screen and (max-width: 768px) {
   
