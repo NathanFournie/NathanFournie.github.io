@@ -226,7 +226,7 @@ footer {
   transform-origin: bottom center;
   transform: perspective(600px) rotateX(25deg) scale(0.9);
   /* Pas d’animation pour effet fixe */
-}
+} 
 
 
   
