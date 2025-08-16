@@ -123,12 +123,7 @@ a:hover {
   color: var(--lien-survol);
 }
 
-.document a::after {
-  content: " 📃"; /* icône discrète */
-  font-size: 0.9em;
-  vertical-align: middle;
-  color: var(--lien-survol);
-}
+
 
 /* --- Commentaires --- */
 .commentaire, .com_lien {
@@ -138,20 +133,34 @@ a:hover {
   color: #555;
 }
 
-/* Icône dev */
-.document.dev a::before {
-  content: "📄 "; 
-  font-size: 0.95em;
-  vertical-align: middle;
-  color: var(--lien-survol);
-}
-
 /* Description à côté */
 .document .desc {
   font-style: italic;
   font-size: 0.9em;
   color: #555;
 }
+
+
+/* --- Icônes par thème --- */
+.document.exo a::before {
+  content: "📝 ";   /* exos */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+.document.dev a::before {
+  content: "⚙️ ";   /* développements */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+.document.cours a::before {
+  content: "📘 ";   /* cours */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+
 
 /* --- Galerie d’images en flexbox --- */
 .gallery {
