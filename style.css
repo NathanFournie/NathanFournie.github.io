@@ -149,13 +149,25 @@ a:hover {
 }
 
 .document.dev a::before {
-  content: "⚙️ ";   /* développements */
+  content: "📋 ";   /* développements */
   font-size: 0.95em;
   color: var(--lien-survol);
 }
 
 .document.cours a::before {
-  content: "📘 ";   /* cours */
+  content: "📖 ";   /* cours */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+.document.code a::before {
+  content: "🐍 ";   /* cours */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+.document.fiche a::before {
+  content: "🗒️ ";   /* cours */
   font-size: 0.95em;
   color: var(--lien-survol);
 }
