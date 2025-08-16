@@ -172,6 +172,13 @@ a:hover {
   color: var(--lien-survol);
 }
 
+.document.autre a::before {
+  content: "📃 ";   /* cours */
+  font-size: 0.95em;
+  color: var(--lien-survol);
+}
+
+
 /* Tous les liens de la liste */
 .liens li a::before {
   content: "🌐 ";   /* logo par défaut */
