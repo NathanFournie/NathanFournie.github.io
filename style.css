@@ -138,6 +138,21 @@ a:hover {
   color: #555;
 }
 
+/* Icône dev */
+.document.dev a::before {
+  content: "📄 "; 
+  font-size: 0.95em;
+  vertical-align: middle;
+  color: var(--lien-survol);
+}
+
+/* Description à côté */
+.document .desc {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #555;
+}
+
 /* --- Galerie d’images en flexbox --- */
 .gallery {
   display: flex;
